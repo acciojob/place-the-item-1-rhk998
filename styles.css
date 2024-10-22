@@ -1,2 +1,34 @@
+/* Flex container */
+.holder {
+    display: flex;
+    flex-wrap: wrap;           /* Allows items to wrap to the next row if there is no space */
+    justify-content: space-between; /* Distributes items evenly with space between them */
+    align-items: flex-start;   /* Align items to the top of the container */
+    width: 100%;               /* Full width */
+    height: auto;              /* Adjust height automatically */
+}
 
-/* Your CSS Code here. */
+/* Flex items */
+.item {
+    background-color: green;
+    color: black;
+    width: 100px;              /* Set each item's width */
+    height: 100px;             /* Set each item's height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+/* Customizing specific items */
+.item-1 {
+    background-color: red;
+}
+
+.item-2 {
+    background-color: blue;
+    flex-grow: 2;              /* Let item 2 grow twice the size of others horizontally */
+    height: 200px;             /* Make it taller */
+}
+
+/* You can keep item-3 to item-7 as they are */
